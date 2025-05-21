@@ -1,5 +1,5 @@
 AddSubClass("fighter", "Musketeer", {
-	regExpSearch : /^(?=.*(war|fighter|Musketeer|martial))(?=.*master).*$/i,
+	regExpSearch : /"Musketeer Fighter"/i,
 	subname : "Musketeer",
 	fullname : "Musketeer",
 	source : [["P", 1000]],
