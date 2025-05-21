@@ -108,4 +108,4 @@ AddSubClass("fighter", "Musketeer", {
 			description : "\n   " + "At 18th level your tenacity has driven you far, at the start of combat, if you have no uses of your Daring Strikes left, you regain one use. "
 		}
 	}
-},})
+},});
