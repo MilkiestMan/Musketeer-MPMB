@@ -1,10 +1,9 @@
 AddSubClass("fighter", "Musketeer", {
-	regExpSearch : /"Musketeer Fighter"/i,
+	regExpSearch : /Musketeer/i,
 	subname : "Musketeer",
 	fullname : "Musketeer",
-	source : [["P", 1000]],
+	source : [["HB", 0]],
 	abilitySave : 2,
-	abilitySaveAlt : 2,
 	features : {
 		"subclassfeature3" : {
 			name : "Daring Strikes",
@@ -27,13 +26,13 @@ AddSubClass("fighter", "Musketeer", {
 			extraTimes : levels.map(function (n) {
 				return n < 3 ? 0 : n < 7 ? 3 : n < 10 ? 5 : n < 15 ? 7 : 9;
 			}),
-			"broom Strikes" : {
+			"broom strikes" : {
 				name : "Broom Strikes",
 				source : [["P", 1000]],
 				description : "\n   " + "While taking the disengage action, you may choose to make an attack, swinging your weapon in a sweeping motion back and forth to keep your opponent at bay.",
-				action : ["Disengage",]
+				action : [["Action, Disengage",]]
 			},
-			"circle Swing" : {
+			"circle swing" : {
 				name : "Circle Swing",
 				source : [["P", 1000]],
 				description : "\n   " + "Inplace of your attack action, you may swing your sword in a circle around you attacking all adjacent." + "\n   " + "creatures. You make separate attack rolls for each individual creature."
@@ -74,8 +73,8 @@ AddSubClass("fighter", "Musketeer", {
 			source : [["P", 1000]],
 			minlevel : 3,
 			description : "\n   " + "You gain proficiency with firearms and gain a proficiency in Acrobatics if you did not already have it.",
-			skillstxt : "Proficiency with one Acrobatics.",
-			weaponProfs : [["Firearms", 1]]
+			skills : "Acrobatics",
+			weaponProfs : [false, false, ["firearm"]],
 		},
 		"subclassfeature7" : {
 			name : "Point Blank Shot",
